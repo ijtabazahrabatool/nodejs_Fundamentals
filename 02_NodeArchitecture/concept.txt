@@ -1,0 +1,19 @@
+Blocking operations (syncronous operations)
+Non-Blocking operations (asynchronous operations)
+
+client request and goes to node server in event Queue
+Event loop check the operation type 
+---> if non-blocking then  process it and send response to user 
+---> If blocking operation then goes to Thread Pool (pool of threads (workers) responsible of fullfiling blocking operations)
+ 
+PROBLEM IN BLOCKING OPERATIONS
+
+---> limited threads , by default 4
+---> if 5th user comes it will wait (4 workers working)
+---> server can take alot of time in case of many users
+So, good practice to write non-blocking code
+
+
+//-------------------------
+DEFAULT THREAD POOL SIZE = 4
+MAX ?  - 8 CORE CPU  - 8
