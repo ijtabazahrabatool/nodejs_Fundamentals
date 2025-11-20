@@ -1,0 +1,4 @@
+url (uniform resource locator)
+https(secure Protocol , use ssl certificate)
+Protocol : set of rules to communicate 
+Query Parameters: extra information passed with url
